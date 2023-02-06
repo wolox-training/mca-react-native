@@ -14,7 +14,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "lint-diff": "git diff --staged --name-only --relative --diff-filter=ACM | grep -E \"\\.(ts|tsx|js|jsx)$\" | xargs eslint",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@testing-library/jest-native": "^3.4.3",
@@ -54,7 +55,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-react-native": "^3.8.1",
-    "husky": "^4.2.5",
+    "husky": "^8.0.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.0.5",
@@ -64,7 +65,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run lint-diff && yarn run check-types"
+      "pre-commit": "npm run lint-diff && yarn run check-types"
     }
   }
 }
