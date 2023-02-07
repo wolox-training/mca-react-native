@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
+
+import styles from './styles';
 
 type BookProps = {
   title: string;
@@ -7,19 +9,14 @@ type BookProps = {
   url: any;
 };
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: 32,
-    paddingHorizontal: 24
-  }
-});
-
 const Book = ({ title, author, url }: BookProps) => {
   return (
     <View style={styles.container}>
-      <Image source={url} />
-      <Text>{title}</Text>
-      <Text>{author}</Text>
+      <Image source={url} style={styles.cover} />
+      <View>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.author}>{author}</Text>
+      </View>
     </View>
   );
 };
