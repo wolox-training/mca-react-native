@@ -13,12 +13,6 @@ const App = () => {
           <View>
             <View style={styles.sectionContainer}>
               <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} url={0} />
             </View>
           </View>
         </ScrollView>
