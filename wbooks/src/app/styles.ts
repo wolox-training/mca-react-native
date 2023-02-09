@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
 
 const styles = StyleSheet.create({
-  scrollView: {
+  body: {
     backgroundColor: COLORS.aliceblue
   },
   sectionTitle: {
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase'
   },
   sectionContainer: {
+    backgroundColor: COLORS.aliceblue,
     marginTop: 35,
     paddingHorizontal: 20
   }
