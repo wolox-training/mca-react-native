@@ -4,15 +4,16 @@ import { View, Text, Image } from 'react-native';
 import styles from './styles';
 
 type BookProps = {
+  id: number;
   title: string;
   author: string;
-  url: any;
+  url?: string;
 };
 
 const Book = ({ title, author, url }: BookProps) => {
   return (
     <View style={styles.container}>
-      <Image source={url} style={styles.cover} />
+      {url && <Image source={{ uri: url }} style={styles.cover} />}
       <View>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.author}>{author}</Text>
