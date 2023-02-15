@@ -3,7 +3,7 @@ import { COLORS } from '@constants/colors';
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: COLORS.aliceblue
+    backgroundColor: COLORS.aliceBlue
   },
   sectionContainer: {
     marginTop: 35,
