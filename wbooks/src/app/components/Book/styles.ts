@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
+import { FONT_SIZES } from '@constants/fonts';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,17 +13,16 @@ const styles = StyleSheet.create({
     paddingVertical: 15
   },
   cover: {
-    backgroundColor: COLORS.deepSkyBlue,
     height: 60,
     marginRight: 15,
     width: 40
   },
   title: {
-    fontSize: 17,
+    fontSize: FONT_SIZES.regular,
     fontWeight: 'bold'
   },
   author: {
-    fontSize: 15
+    fontSize: FONT_SIZES.small
   }
 });
 

@@ -3,7 +3,7 @@ import { COLORS } from '@constants/colors';
 
 const styles = StyleSheet.create({
   body: {
-    backgroundColor: COLORS.aliceblue
+    backgroundColor: COLORS.aliceBlue
   },
   sectionTitle: {
     alignItems: 'center',
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase'
   },
   sectionContainer: {
-    backgroundColor: COLORS.aliceblue,
+    backgroundColor: COLORS.aliceBlue,
     marginTop: 35,
     paddingHorizontal: 20
   }
