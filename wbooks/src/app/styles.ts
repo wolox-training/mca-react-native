@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
+import { FONT_SIZES } from '@constants/fonts';
 
 const styles = StyleSheet.create({
   body: {
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: COLORS.white,
-    fontSize: 17,
+    fontSize: FONT_SIZES.regular,
     fontWeight: 'bold',
     textTransform: 'uppercase'
   },
