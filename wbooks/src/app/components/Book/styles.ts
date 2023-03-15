@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
 import { FONT_SIZES } from '@constants/fonts';
+import { SPACING } from '@constants/spacing';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,14 +9,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 10,
+    marginTop: SPACING.space10,
     paddingHorizontal: 30,
     paddingVertical: 15
   },
   cover: {
     backgroundColor: COLORS.deepSkyBlue,
     height: 60,
-    marginRight: 15,
+    marginRight: SPACING.space15,
     width: 40
   },
   title: {
