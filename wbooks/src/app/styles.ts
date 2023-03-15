@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
 import { FONT_SIZES } from '@constants/fonts';
+import { SPACING } from '@constants/spacing';
 
 const styles = StyleSheet.create({
   body: {
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
   },
   sectionContainer: {
     backgroundColor: COLORS.aliceBlue,
-    marginTop: 35,
+    marginTop: SPACING.space35,
     paddingHorizontal: 20
   }
 });
