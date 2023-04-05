@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     paddingVertical: 15
   },
   cover: {
-    backgroundColor: COLORS.deepSkyBlue,
     height: 60,
     marginRight: SPACING.space15,
     width: 40

@@ -1,5 +1,6 @@
+import { BOOKS_MOCK } from '@constants/mockBooks';
 import React from 'react';
-import { SafeAreaView, ScrollView, View, StatusBar } from 'react-native';
+import { SafeAreaView, View, FlatList } from 'react-native';
 
 import Book from './components/Book';
 import styles from './styles';
@@ -7,21 +8,16 @@ import styles from './styles';
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
-          <View>
-            <View style={styles.sectionContainer}>
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={0} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={1} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={2} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={3} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={4} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={5} />
-              <Book title={'A little bird told me'} author={'Timothy Cross'} id={6} />
-            </View>
-          </View>
-        </ScrollView>
+        <View style={styles.sectionContainer}>
+          <FlatList
+            data={BOOKS_MOCK}
+            renderItem={({ item }) => (
+              <Book id={item.id} title={item.title} author={item.author} url={item.imageUrl} />
+            )}
+            keyExtractor={item => item.id.toString()}
+          />
+        </View>
       </SafeAreaView>
     </>
   );

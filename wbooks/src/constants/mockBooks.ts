@@ -1,3 +1,5 @@
+import search from '../app/assets/libro_3.png';
+
 export const BOOKS_MOCK = [
   {
     id: 0,
@@ -19,12 +21,12 @@ export const BOOKS_MOCK = [
   },
   {
     id: 2,
-    author: 'Lois Duncan',
-    title: 'Locked in time',
+    author: 'Timothy Cross',
+    title: 'A Little Bird Told Me',
     genre: 'suspense',
     publisher: 'Little, Brown',
     year: '1985',
-    imageUrl: 'https://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg'
+    imageUrl: search
   },
   {
     id: 3,
@@ -33,7 +35,7 @@ export const BOOKS_MOCK = [
     genre: 'suspense',
     publisher: 'Pocket Books',
     year: '1989',
-    imageUrl: 'https://wolox-training.s3.amazonaws.com/uploads/6963511-M.jpg'
+    imageUrl: null
   },
   {
     id: 4,
@@ -42,7 +44,7 @@ export const BOOKS_MOCK = [
     genre: 'suspense',
     publisher: 'Pocket Books',
     year: '1989',
-    imageUrl: 'https://wolox-training.s3.amazonaws.com/uploads/6963511-M.jpg'
+    imageUrl: search
   },
   {
     id: 5,
@@ -51,7 +53,7 @@ export const BOOKS_MOCK = [
     genre: 'suspense',
     publisher: 'Riverhead Books',
     year: '2015',
-    imageUrl: 'https://wolox-training.s3.amazonaws.com/uploads/content.jpeg'
+    imageUrl: search
   },
   {
     id: 6,
@@ -60,7 +62,7 @@ export const BOOKS_MOCK = [
     genre: 'suspense',
     publisher: 'Scribner',
     year: '2014',
-    imageUrl: 'https://wolox-training.s3.amazonaws.com/uploads/content.jpeg'
+    imageUrl: null
   },
   {
     id: 7,
@@ -69,8 +71,7 @@ export const BOOKS_MOCK = [
     genre: 'thriller',
     publisher: 'Ballantine Books',
     year: '2003',
-    imageUrl:
-      'https://wolox-training.s3.amazonaws.com/uploads/el-psicoanalista-analyst-john-katzenbach-paperback-cover-art.jpg'
+    imageUrl: null
   },
   {
     id: 8,
@@ -79,6 +80,6 @@ export const BOOKS_MOCK = [
     genre: 'fiction',
     publisher: 'Crown Publishing Group',
     year: '2011',
-    imageUrl: 'https://wolox-training.s3.amazonaws.com/uploads/41DNuJfahyL._SX322_BO1_204_203_200_.jpg'
+    imageUrl: search
   }
 ];
